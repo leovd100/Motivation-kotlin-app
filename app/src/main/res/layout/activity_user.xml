@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/purple"
+    tools:context=".ui.UserActivity">
+
+
+    <TextView
+        android:text="@string/lets_begin"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cabin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:hint="@string/your_name"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_height="match_parent">
+    <Button
+        android:backgroundTint="@color/light_purple"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:id="@+id/button_save"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
