@@ -21,11 +21,21 @@ This app was created from a study in kotlin. Its purpose is to generate random m
 
 ---
 
+<br>
+<br>
+
+### Language:
+<br>
+
+The application is available in 3 languages, English, Portuguese and French. The App checks the phone's language and automatically changes the app's language
+
+
+
 
 <div>
 
-![img](./img/img_name.png)
-![img](./img/img_phrase.png)
+![img](./img/en_img_name.png)
+![img](./img/en_img_phrase.png)
 
 </div>
 

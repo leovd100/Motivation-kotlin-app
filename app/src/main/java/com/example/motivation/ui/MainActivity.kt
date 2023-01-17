@@ -12,6 +12,7 @@ import com.example.motivation.data.Mock
 import com.example.motivation.infra.SecurityPreferences
 import com.example.motivation.databinding.ActivityMainBinding
 import kotlinx.coroutines.selects.select
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -48,7 +49,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun handleNextPhrase(category: Int){
-        binding.textFreeze.text = Mock().filterByCategoryId(category)
+
+        binding.textFreeze.text = Mock().filterByCategoryId(category, Locale.getDefault().language)
     }
 
     private fun handleFilter(id: Int?){
@@ -79,7 +81,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleUserName(){
         val name = SecurityPreferences(this).getString(MotivationConstants.key.USER_NAME)
-        binding.textUserName.text = "Olá, $name!"
+
+        binding.textUserName.text = "${getString(R.string.hello)}, $name!"
     }
 
 }
