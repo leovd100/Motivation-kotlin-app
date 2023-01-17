@@ -36,4 +36,5 @@ This app was created from a study in kotlin. Its purpose is to generate random m
 
 <br>
 
-    To open and run the application, just access it in Android Studio using the 'file' and 'open' option, then just access the folder where the project was saved. Gradle will automatically download the project's dependencies.
+    To open and run the application, just access it in Android Studio using the 'file' and 'open' option, 
+    then just access the folder where the project was saved.Gradle will automatically download the project's dependencies.
